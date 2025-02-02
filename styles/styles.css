@@ -172,3 +172,16 @@ nav button:hover{
     font-size: 16px;
     line-height: 1.6;
 }
+
+/* inspiration section styles */
+.video-container{
+    padding: 32px;
+    border: 1px solid #DBDBDE;
+    border-radius: 16px;
+    margin-bottom: 151px;
+}
+
+.video-container iframe{
+    border: 0;
+    border-radius: 16px;
+}
