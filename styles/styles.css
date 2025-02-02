@@ -5,8 +5,23 @@
 }
 
 .container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+}
+
+.section-title{
+    color: #0D1321;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.section-subtitle{
+    color: #555A63;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 24px 0 48px 0;
 }
 
 /* header styles */
@@ -33,7 +48,8 @@ nav button{
 }
 
 nav button:hover{
-    background-color: #FAFAFB;
+    color: white;
+    background-color: #0D1321;
     cursor: pointer;
 }
 
@@ -46,6 +62,7 @@ nav button:hover{
     align-items: center;
     padding: 35px 221px;
     text-align: center;
+    margin-bottom: 74px;
 }
 
 .hero-section h1{
@@ -53,10 +70,11 @@ nav button:hover{
     font-size: 48px;
     font-weight: bolder;
     margin-top: 32px;
+    line-height: 1.6;
 }
 
 .hero-section p{
-    color: #0D1321;
+    color: #555A63;
     font-size: 16px;
     line-height: 1.6;
     margin: 24px 0 32px 0;
@@ -66,6 +84,7 @@ nav button:hover{
     color: white;
     font-size: 20px;
     padding: 17px 24px;
+    border: 1px solid #0D1321;
     border-radius: 8px;
     background-color: #0D1321;
 }
@@ -74,4 +93,82 @@ nav button:hover{
     color: #0D1321;
     background-color: #FAFAFB;
     cursor: pointer;
+}
+
+/* why web dev section styles */
+.why-web-dev{
+    background-color: #FAFAFB;
+    border: 0;
+    border-radius: 16px;
+    padding: 80px 97px;
+    margin-bottom: 90px;
+}
+
+.why-web-dev button{
+    font-size: 20px;
+    padding: 12px 20px;
+    border: 1px solid #555A63;
+    background-color: white;
+    color: #555A63;
+}
+
+.why-web-dev button:hover{
+    background-color: #0D1321;
+    color: white;
+    cursor: pointer;
+}
+
+.why-web-dev-box-1{
+    color: #555A63;
+    background-image: linear-gradient(to right, white , #FAFAFB);
+    border: 0;
+    border-radius: 16px;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.why-web-dev-box-2{
+    color: #555A63;
+    background-image: linear-gradient(to right, #FAFAFB, white);
+    border: 0;
+    border-radius: 16px;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.why-web-dev-box-3{
+    color: #555A63;
+    background-image: linear-gradient(to right, white , #FAFAFB);
+    border: 0;
+    border-radius: 16px;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.why-web-dev-box-1:hover, .why-web-dev-box-3:hover{
+    background-image: linear-gradient(to right, #FAFAFB, white);
+}
+
+.why-web-dev-box-2:hover{
+    background-image: linear-gradient(to right, white , #FAFAFB);
+}
+
+.why-web-dev-box-title{
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.why-web-dev-box-subtitle{
+    margin: 16px 0 32px 0;
+    font-size: 16px;
+    line-height: 1.6;
 }
