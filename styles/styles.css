@@ -1,22 +1,22 @@
 /* global styles */
-*{
+* {
     margin: 0;
     font-family: "Azeret Mono", serif;
 }
 
-.container{
+.container {
     width: 70%;
     margin: 0 auto;
 }
 
-.section-title{
+.section-title {
     color: #0D1321;
     font-size: 32px;
     font-weight: bolder;
     text-align: center;
 }
 
-.section-subtitle{
+.section-subtitle {
     color: #555A63;
     font-size: 16px;
     line-height: 1.6;
@@ -27,19 +27,19 @@
 /* header styles */
 
 /* nav styles */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 36px 0;
 }
 
-nav h2{
+nav h2 {
     font-size: 28px;
     font-weight: bolder;
 }
 
-nav button{
+nav button {
     font-size: 20px;
     padding: 17px 24px;
     border: 1px solid #0D1321;
@@ -47,14 +47,30 @@ nav button{
     background-color: white;
 }
 
-nav button:hover{
+nav button:hover {
     color: white;
     background-color: #0D1321;
     cursor: pointer;
 }
 
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    nav button {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+}
+
 /* hero section styles */
-.hero-section{
+.hero-section {
     background: url('../assets/Hero-bg.png');
     display: flex;
     flex-direction: column;
@@ -65,7 +81,7 @@ nav button:hover{
     margin-bottom: 74px;
 }
 
-.hero-section h1{
+.hero-section h1 {
     color: #0D1321;
     font-size: 48px;
     font-weight: bolder;
@@ -73,14 +89,14 @@ nav button:hover{
     line-height: 1.6;
 }
 
-.hero-section p{
+.hero-section p {
     color: #555A63;
     font-size: 16px;
     line-height: 1.6;
     margin: 24px 0 32px 0;
 }
 
-.hero-section button{
+.hero-section button {
     color: white;
     font-size: 20px;
     padding: 17px 24px;
@@ -89,14 +105,29 @@ nav button:hover{
     background-color: #0D1321;
 }
 
-.hero-section button:hover{
+.hero-section button:hover {
     color: #0D1321;
     background-color: #FAFAFB;
     cursor: pointer;
 }
 
+@media screen and (max-width: 576px) {
+    .hero-section {
+        padding: 35px 35px;
+    }
+
+    .hero-section h1 {
+        font-size: 30px;
+    }
+
+    .hero-section button {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+}
+
 /* why web dev section styles */
-.why-web-dev{
+.why-web-dev {
     background-color: #FAFAFB;
     border: 0;
     border-radius: 16px;
@@ -104,7 +135,7 @@ nav button:hover{
     margin-bottom: 90px;
 }
 
-.why-web-dev button{
+.why-web-dev button {
     font-size: 20px;
     padding: 12px 20px;
     border: 1px solid #555A63;
@@ -112,15 +143,15 @@ nav button:hover{
     color: #555A63;
 }
 
-.why-web-dev button:hover{
+.why-web-dev button:hover {
     background-color: #0D1321;
     color: white;
     cursor: pointer;
 }
 
-.why-web-dev-box-1{
+.why-web-dev-box-1 {
     color: #555A63;
-    background-image: linear-gradient(to right, white , #FAFAFB);
+    background-image: linear-gradient(to right, white, #FAFAFB);
     border: 0;
     border-radius: 16px;
     padding: 48px;
@@ -130,7 +161,7 @@ nav button:hover{
     margin-bottom: 32px;
 }
 
-.why-web-dev-box-2{
+.why-web-dev-box-2 {
     color: #555A63;
     background-image: linear-gradient(to right, #FAFAFB, white);
     border: 0;
@@ -142,9 +173,9 @@ nav button:hover{
     margin-bottom: 32px;
 }
 
-.why-web-dev-box-3{
+.why-web-dev-box-3 {
     color: #555A63;
-    background-image: linear-gradient(to right, white , #FAFAFB);
+    background-image: linear-gradient(to right, white, #FAFAFB);
     border: 0;
     border-radius: 16px;
     padding: 48px;
@@ -154,40 +185,66 @@ nav button:hover{
     margin-bottom: 32px;
 }
 
-.why-web-dev-box-1:hover, .why-web-dev-box-3:hover{
+.why-web-dev-box-1:hover,
+.why-web-dev-box-3:hover {
     background-image: linear-gradient(to right, #FAFAFB, white);
 }
 
-.why-web-dev-box-2:hover{
-    background-image: linear-gradient(to right, white , #FAFAFB);
+.why-web-dev-box-2:hover {
+    background-image: linear-gradient(to right, white, #FAFAFB);
 }
 
-.why-web-dev-box-title{
+.why-web-dev-box-title {
     font-size: 24px;
     line-height: 1.6;
 }
 
-.why-web-dev-box-subtitle{
+.why-web-dev-box-subtitle {
     margin: 16px 0 32px 0;
     font-size: 16px;
     line-height: 1.6;
 }
 
+@media screen and (max-width: 576px) {
+    .why-web-dev {
+        padding: 35px;
+    }
+
+    .why-web-dev button {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .why-web-dev-box-1,
+    .why-web-dev-box-2,
+    .why-web-dev-box-3 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+}
+
 /* inspiration section styles */
-.video-container{
+.video-container {
     padding: 32px;
     border: 1px solid #DBDBDE;
     border-radius: 16px;
     margin-bottom: 151px;
 }
 
-.video-container iframe{
+.video-container iframe {
     border: 0;
     border-radius: 16px;
 }
 
+@media screen and (max-width: 576px) {
+    .video-container iframe {
+        height: 300px;
+    }
+}
+
 /* current target section styles */
-.skills{
+.skills {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -195,50 +252,60 @@ nav button:hover{
     margin-bottom: 111px;
 }
 
-.skill-1, .skill-2, .skill-3{
+.skill-1,
+.skill-2,
+.skill-3 {
     padding: 40px;
     border: 0;
     border-radius: 16px;
 }
 
-.skill-1:hover, .skill-2:hover, .skill-3:hover{
+.skill-1:hover,
+.skill-2:hover,
+.skill-3:hover {
     background-color: #FAFAFB;
 }
 
-.skill-1{
+.skill-1 {
     background-color: #FFF6F4;
 }
 
-.skill-2{
+.skill-2 {
     background-color: #F2F6FE;
 }
 
-.skill-3{
+.skill-3 {
     background-color: #FFFDF2;
 }
 
-.skills h3{
+.skills h3 {
     color: #0D1321;
     font-size: 24px;
     font-weight: bolder;
     margin-top: 24px;
 }
 
-.skills p{
+.skills p {
     color: #555A63;
     font-size: 16px;
     line-height: 1.6;
     margin: 24px 0;
 }
 
-.skills a{
+.skills a {
     color: #0D1321;
     font-size: 16px;
     font-weight: bold;
 }
 
+@media screen and (max-width: 576px) {
+    .skills {
+        flex-direction: column;
+    }
+}
+
 /* next target section styles */
-.target{
+.target {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,31 +316,37 @@ nav button:hover{
     margin-bottom: 49px;
 }
 
-.target:hover{
+.target:hover {
     box-shadow: 5px 5px 5px #DBDBDE;
 }
 
-.target-content h3{
+.target-content h3 {
     color: #0D1321;
     font-size: 24px;
     font-weight: bolder;
 }
 
-.target-content p{
+.target-content p {
     color: #555A63;
     font-size: 16px;
     line-height: 1.6;
     margin: 24px 0;
 }
 
-.target-content a{
+.target-content a {
     color: #0D1321;
     font-size: 16px;
     font-weight: bold;
 }
 
+@media screen and (max-width: 576px) {
+    .target {
+        flex-direction: column;
+    }
+}
+
 /* support section styles */
-.support{
+.support {
     background: url('../assets/handshake.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -284,19 +357,19 @@ nav button:hover{
     margin-bottom: 80px;
 }
 
-.support h2{
+.support h2 {
     color: white;
 }
 
-.support p{
+.support p {
     color: #DBDBDE;
 }
 
-.support-form{
+.support-form {
     text-align: center;
 }
 
-.support input{
+.support input {
     padding: 20px;
     border: 0;
     border-radius: 8px;
@@ -306,11 +379,11 @@ nav button:hover{
     width: 548px;
 }
 
-.support input:focus{
+.support input:focus {
     color: #0D1321;
 }
 
-.support button{
+.support button {
     font-size: 20px;
     padding: 17px 24px;
     border: 1px solid #0D1321;
@@ -318,26 +391,53 @@ nav button:hover{
     background-color: white;
 }
 
-.support button:hover{
+.support button:hover {
     color: white;
     background-color: #0D1321;
     cursor: pointer;
 }
 
+@media screen and (max-width: 576px) {
+    .support {
+        padding: 20px;
+    }
+
+    .support input {
+        display: none;
+    }
+
+    .support button {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+}
+
 /* footer styles */
-footer{
+footer {
     background-color: #F8F8F8;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 32px 0;
 }
 
-.footer h4{
+.footer h4 {
     color: #0D1321;
     font-size: 20px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer h4 {
+        text-align: center;
+        font-size: 16px;
+    }
 }
