@@ -1,0 +1,77 @@
+/* global styles */
+*{
+    margin: 0;
+    font-family: "Azeret Mono", serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header styles */
+
+/* nav styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0;
+}
+
+nav h2{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+nav button{
+    font-size: 20px;
+    padding: 17px 24px;
+    border: 1px solid #0D1321;
+    border-radius: 8px;
+    background-color: white;
+}
+
+nav button:hover{
+    background-color: #FAFAFB;
+    cursor: pointer;
+}
+
+/* hero section styles */
+.hero-section{
+    background: url('../assets/Hero-bg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 221px;
+    text-align: center;
+}
+
+.hero-section h1{
+    color: #0D1321;
+    font-size: 48px;
+    font-weight: bolder;
+    margin-top: 32px;
+}
+
+.hero-section p{
+    color: #0D1321;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 24px 0 32px 0;
+}
+
+.hero-section button{
+    color: white;
+    font-size: 20px;
+    padding: 17px 24px;
+    border-radius: 8px;
+    background-color: #0D1321;
+}
+
+.hero-section button:hover{
+    color: #0D1321;
+    background-color: #FAFAFB;
+    cursor: pointer;
+}
