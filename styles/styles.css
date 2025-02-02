@@ -236,3 +236,42 @@ nav button:hover{
     font-size: 16px;
     font-weight: bold;
 }
+
+/* next target section styles */
+.targets{
+
+}
+
+.target{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 32px;
+    border: 1px solid #DBDBDE;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.target-content{
+
+}
+
+.target-content h3{
+    color: #0D1321;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.target-content p{
+    color: #555A63;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+.target-content a{
+    color: #0D1321;
+    font-size: 16px;
+    font-weight: bold;
+}
