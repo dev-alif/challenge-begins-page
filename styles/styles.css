@@ -185,3 +185,54 @@ nav button:hover{
     border: 0;
     border-radius: 16px;
 }
+
+/* current target section styles */
+.skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 111px;
+}
+
+.skill-1, .skill-2, .skill-3{
+    padding: 40px;
+    border: 0;
+    border-radius: 16px;
+}
+
+.skill-1:hover, .skill-2:hover, .skill-3:hover{
+    background-color: #FAFAFB;
+}
+
+.skill-1{
+    background-color: #FFF6F4;
+}
+
+.skill-2{
+    background-color: #F2F6FE;
+}
+
+.skill-3{
+    background-color: #FFFDF2;
+}
+
+.skills h3{
+    color: #0D1321;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 24px;
+}
+
+.skills p{
+    color: #555A63;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+.skills a{
+    color: #0D1321;
+    font-size: 16px;
+    font-weight: bold;
+}
